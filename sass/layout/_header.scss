@@ -10,7 +10,9 @@
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
-    @media (min-resolution: 192dpi) and (min-width: 600px), (min-width: 2000px) {
+    @media (min-resolution: 192dpi) and (min-width: 600px),
+        (-webkit-min-device-pixel-ration: 2) and (min-width: 600px), // we can use em 600px = 37.5em
+        (min-width: 2000px) {
         background-image: linear-gradient(to right bottom,
      rgba($color-primary-light, 0.8),
      rgba($color-primary-dark, 0.8)),
