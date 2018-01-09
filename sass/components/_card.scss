@@ -152,7 +152,9 @@
         border-radius: 3px;
     }
 
-    @include respond(tab-port) {
+    // @include respond(tab-port) {
+        @media only screen and (max-width: 56.25em), only screen and (hover: none) { 
+
             // functionality
         height: auto; 
         box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
